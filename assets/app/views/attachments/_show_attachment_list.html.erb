@@ -36,3 +36,11 @@
 <% else %>
 No <%= params[ :media ]%> Uploaded Yet.
 <% end %>
+
+
+//ajax call for getting paginated values
+// It is in jQuery. you can implement same for prototype or others in your ways
+$('.pagination a').live('click',function (){
+  $.getScript(this.href);
+  return false;
+});
